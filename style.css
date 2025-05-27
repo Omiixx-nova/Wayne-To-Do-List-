@@ -1,0 +1,227 @@
+/* Common styles */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 400px;
+  max-width: 90vw;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+#task-input {
+  width: calc(100% - 60px);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#add-btn {
+  width: 50px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.task-item {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.task-text:focus {
+  outline: 1px solid;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#task-stats {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark #task-input {
+  background-color: #222;
+  border-color: #444;
+  color: #eee;
+}
+
+body.dark #add-btn {
+  background-color: #f5c518;
+  color: #121212;
+}
+
+body.dark #add-btn:hover {
+  background-color: #e6b50f;
+}
+
+body.dark .task-item {
+  background-color: #1e1e1e;
+}
+
+body.dark .task-text {
+  color: #eee;
+}
+
+body.dark .task-text:focus {
+  background-color: #333;
+  outline-color: #f5c518;
+}
+
+body.dark .remove-btn {
+  color: #f44336;
+}
+
+body.dark .remove-btn:hover {
+  color: #ff7961;
+}
+
+body.dark #task-stats {
+  color: #f5c518;
+}
+
+body.dark footer {
+  color: #888;
+  border-top: 1px solid #333;
+}
+
+body.dark footer p em {
+  color: #f5c518;
+}
+
+/* Light theme */
+body.light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+body.light #task-input {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #222;
+}
+
+body.light #add-btn {
+  background-color: #222;
+  color: #f5c518;
+}
+
+body.light #add-btn:hover {
+  background-color: #555;
+}
+
+body.light .task-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+body.light .task-text {
+  color: #222;
+}
+
+body.light .task-text:focus {
+  background-color: #e7e7e7;
+  outline-color: #f5c518;
+}
+
+body.light .remove-btn {
+  color: #b00020;
+}
+
+body.light .remove-btn:hover {
+  color: #ff4343;
+}
+
+body.light #task-stats {
+  color: #222;
+}
+
+body.light footer {
+  color: #444;
+  border-top: 1px solid #ccc;
+}
+
+body.light footer p em {
+  color: #b8860b;
+}
