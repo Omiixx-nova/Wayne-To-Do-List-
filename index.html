@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wayne Protocol Task Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Wayne Protocol Tasks</h1>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+    </header>
+    <input id="task-input" type="text" placeholder="Add a new task..." aria-label="Add a new task" />
+    <button id="add-btn">Add</button>
+    <ul id="task-list" aria-live="polite"></ul>
+    <div id="task-stats" aria-live="polite"></div>
+  </div>
+
+  <footer>
+    <p><em>"It's not who I am underneath, but what I do that defines me." — Batman</em></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
