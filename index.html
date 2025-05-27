@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wayne Protocol Task Manager</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Batman To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Wayne Protocol Tasks</h1>
-      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
-    </header>
-    <input id="task-input" type="text" placeholder="Add a new task..." aria-label="Add a new task" />
-    <button id="add-btn">Add</button>
-    <ul id="task-list" aria-live="polite"></ul>
-    <div id="task-stats" aria-live="polite"></div>
+<body class="dark">
+  <div class="todo-container">
+    <h1>Batman To-Do List</h1>
+    <div class="input-area">
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <button id="add-btn">Add</button>
+    </div>
+    <ul id="task-list"></ul>
+    <div id="task-stats">Total Tasks: 0 | Completed: 0</div>
   </div>
 
   <footer>
-    <p><em>"It's not who I am underneath, but what I do that defines me." — Batman</em></p>
+    "It's not who I am underneath, but what I do that defines me." — Batman
   </footer>
 
   <script src="app.js"></script>
